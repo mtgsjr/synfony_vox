@@ -1,8 +1,51 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <h1>Vox tecnologia!</h1>
-    <div class="alert alert-primary" role="alert">
-         Exemplo simples...
+{% block body %}    
+    <div style="text-align: center; background-color: blue; padding: 10px;">
+    <img src="http://www.voxtecnologia.com.br/images/vox-tecnologia.png" class="rounded-0" alt="Vox">
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary text-white shadow-lg">
+    <div class="container-fluid">
+    {#<a class="navbar-brand text-white" href="#">[VOX]</a>#}
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {# <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li> #}
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Sobre a empresa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Nosso Time</a>
+        </li>
+        <li class="nav-item dropdown text-white">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Soluções
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">SIGPub</a></li>
+            <li><a class="dropdown-item" href="#">SIGISS</a></li>
+            <li><a class="dropdown-item" href="#">SIGFácil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">SIGIntranet</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Downloads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">Contatos</a>
+        </li>
+      </ul>
+      <form class="d-flex">      
+      <div class="container-fluid">  
+        <button class="btn btn-outline-success text-white" type="submit">Entrar</button>
+      </div>  
+      </form>
+    </div>
+  </div>
+</nav>
 {% endblock %}
